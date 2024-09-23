@@ -4,12 +4,12 @@ import "./Products.scss";
 import  { useState, useEffect } from 'react';
 
 
-export default function Products() {
+export default function Computadores() {
 
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetchProducts('celular').then((response) => {
+        fetchProducts('computadore').then((response) => {
             setProducts(response);
         })
     }, [])

@@ -1,5 +1,5 @@
-.search {
-    width: 70%;
+.SearchResponse {
+    width: 90%;
     max-width: 500px;
     background-color: #fff;
     border-radius: 8px;
@@ -22,7 +22,7 @@
    
 }
 
-.search-btn {
+.search-btn-res {
     font-weight: 700;
     font-size: 15pt;
     padding: 5px;
@@ -42,8 +42,8 @@
     }
 }
 
-@media only screen and (max-width:768px){
-    .search{
+@media only screen and (min-width:1100px){
+    .SearchResponse{
         display: none;
     }
 }
