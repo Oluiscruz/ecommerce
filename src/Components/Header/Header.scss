@@ -1,0 +1,40 @@
+.header {
+    background: linear-gradient(to right, #18181d, #830cc2);
+    box-shadow: 0px 5px 12px #18181dcb;
+    color: #fff;
+    font-size: 15px;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px;
+    }
+
+    h1 {
+        a {
+            text-decoration: none;
+            color: #fff;
+
+        }
+
+        &:hover {
+            transform: scale(0.96);
+            transition: all 0.2s;
+        }
+
+    }
+
+
+}
+
+@media (max-width:768px) {
+    .header {
+        font-size: 10px;
+        text-align: center;
+    }
+}
