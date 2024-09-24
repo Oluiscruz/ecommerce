@@ -27,7 +27,7 @@
         }
     }
 
-    .search {
+    .header .search {
         display: none;
     }
 
@@ -36,5 +36,9 @@
         a {
             width: 70%;
         }
+        .search {
+            display: flex;
+        }
+    
     }
 }

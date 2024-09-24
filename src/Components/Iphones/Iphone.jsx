@@ -10,7 +10,7 @@ export default function Iphones() {
     const { products, setProducts, loading, setLoading } = useContext(AppContext);
 
     useEffect(() => {
-        fetchProducts('ofertas').then((response) => {
+        fetchProducts('oferta').then((response) => {
             setProducts(response);
             setLoading(false)
         })

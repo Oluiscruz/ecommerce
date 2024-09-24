@@ -74,8 +74,8 @@
 @media only screen and (max-width: 768px){
     .product-card {
         margin: 0 auto;
-        width: 50%;
-        max-width: 120px;
+        width: 100%;
+        max-width: 200px;
     
         img {
             width: 100%;
@@ -83,10 +83,10 @@
         }
 
         .card-infos {
-            padding: 12px;
+            padding: 15px;
     
             .card-prices {
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 400;
                 display: block;
                 margin-bottom: 8px;
