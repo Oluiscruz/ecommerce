@@ -7,7 +7,7 @@ import { useEffect, useContext } from 'react';
 
 
 export default function Iphones() {
-    const {products, setProducts, loading, setLoading} = useContext(AppContext);
+    const { products, setProducts, loading, setLoading } = useContext(AppContext);
 
     useEffect(() => {
         fetchProducts('ofertas').then((response) => {
@@ -17,10 +17,10 @@ export default function Iphones() {
     }, [])
 
     return (
-        (loading && <Loading />) ||  (
-        <section className="products container">
-            {products.map((product) => <ProductCard key={product.id} data={product} />)}
-        </section>
+        (loading && <Loading />) || (
+            <section className="products container">
+                {products.map((product) => <ProductCard key={product.id} data={product} />)}
+            </section>
         )
     )
 }

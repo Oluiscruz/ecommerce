@@ -19,7 +19,7 @@ export default function Search() {
         setLoading(false)
         setSearchValue('');
     }
-    
+
     return (
         <form className="searchResponse" onSubmit={handleSearch}>
             <input type="search"
@@ -27,12 +27,12 @@ export default function Search() {
                 placeholder="Buscar produtos"
                 onChange={({ target }) => setSearchValue(target.value)}
                 required />
-                
+
             <button
                 className="search-btn-res"
                 type="submit">
                 <IoSearch />
-                
+
             </button>
         </form>
     )

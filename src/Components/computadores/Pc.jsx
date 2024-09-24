@@ -2,8 +2,7 @@ import fetchProducts from "../../API/fetchProducts";
 import ProductCard from "../ProductCard/ProductCard";
 import "./Products.scss";
 import Loading from "../Loading/loading";
-
-import  { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 
 export default function Computadores() {
@@ -20,10 +19,10 @@ export default function Computadores() {
     }, [])
 
     return (
-        (loading && <Loading />) ||  (
+        (loading && <Loading />) || (
             <section className="products container">
                 {products.map((product) => <ProductCard key={product.id} data={product} />)}
             </section>
-            )
+        )
     )
 }
