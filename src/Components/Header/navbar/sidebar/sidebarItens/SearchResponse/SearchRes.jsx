@@ -1,4 +1,4 @@
-import './searchRes.scss';
+import './searchres.scss';
 import { IoSearch } from "react-icons/io5";
 import { useContext, useState } from 'react';
 import fetchProducts from '../../../../../../API/fetchProducts';
