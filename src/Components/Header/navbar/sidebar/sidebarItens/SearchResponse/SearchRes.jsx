@@ -1,11 +1,11 @@
 import './searchRes.scss';
 import { IoSearch } from "react-icons/io5";
 import { useContext, useState } from 'react';
-import fetchProducts from '../../API/fetchProducts';
-import AppContext from '../context/AppContext';
+import fetchProducts from '../../../../../../API/fetchProducts';
+import AppContext from '../../../../../context/AppContext';
 
 
-export default function Search() {
+export default function SearchResponse() {
 
     const { setProducts, setLoading } = useContext(AppContext);
     const [searchValue, setSearchValue] = useState('');
