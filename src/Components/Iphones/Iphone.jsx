@@ -2,7 +2,7 @@ import fetchProducts from "../../API/fetchProducts";
 import AppContext from "../context/AppContext";
 import Loading from "../Loading/loading";
 import ProductCard from "../ProductCard/ProductCard";
-import "../computadores/Products.scss";
+import "./iphone.scss";
 import { useEffect, useContext } from 'react';
 
 

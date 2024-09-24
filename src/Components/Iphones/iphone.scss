@@ -1,0 +1,17 @@
+.products{
+    padding: 32px 20px 50px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+@media only screen and (max-width: 660px){
+    .products {
+        padding: 22px 1px 50px;
+    
+        grid-template-columns: repeat(auto-fill,( 3, 300px));
+        gap: 5px;
+        margin: 0;
+    }
+}
