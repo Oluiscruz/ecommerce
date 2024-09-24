@@ -1,26 +1,26 @@
 import fetchProducts from "../../API/fetchProducts";
+import AppContext from "../context/AppContext";
+import Loading from "../Loading/loading";
 import ProductCard from "../ProductCard/ProductCard";
-import "./Products.scss";
-import  { useState, useEffect } from 'react';
+import "../computadores/Products.scss";
+import { useEffect, useContext } from 'react';
 
 
 export default function Iphones() {
-
-    const [products, setProducts] = useState([]);
+    const {products, setProducts, loading, setLoading} = useContext(AppContext);
 
     useEffect(() => {
-        fetchProducts('iphone').then((response) => {
+        fetchProducts('ofertas').then((response) => {
             setProducts(response);
+            setLoading(false)
         })
     }, [])
 
     return (
-        <div className="products container">
-
-            {
-                products.map((product) => <ProductCard key={product.id} data={product} />)
-            }
-
-        </div>
+        (loading && <Loading />) ||  (
+        <section className="products container">
+            {products.map((product) => <ProductCard key={product.id} data={product} />)}
+        </section>
+        )
     )
 }

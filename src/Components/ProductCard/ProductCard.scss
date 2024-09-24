@@ -1,7 +1,3 @@
-img {
-    border-radius: 12px;
-
-}
 
 .product-card {
     margin: 0 auto;
@@ -12,21 +8,21 @@ img {
     flex-direction: column;
     position: relative;
     cursor: pointer;
-    border-radius: 12px;
-
+    border-radius: 8px;
+    img {
+        border-radius: 8px;
+        width: 100%;
+    
+    }
     &:hover {
         transform: scale(0.99);
-    box-shadow: 1px 5px 10px #18181dcb;
+        box-shadow: 1px 5px 10px #18181dcb;
 
         transition: all 0.2s;
     }
 
     &:hover .add-cart-btn {
         display: flex;
-    }
-
-    .image-card {
-        width: 100%;
     }
 
     .card-infos {
@@ -73,4 +69,37 @@ img {
 
     }
 
+}
+
+@media only screen and (max-width: 768px){
+    .product-card {
+        margin: 0 auto;
+        width: 50%;
+        max-width: 120px;
+    
+        img {
+            width: 100%;
+        
+        }
+
+        .card-infos {
+            padding: 12px;
+    
+            .card-prices {
+                font-size: 18px;
+                font-weight: 400;
+                display: block;
+                margin-bottom: 8px;
+                font-family: sans-serif;
+            }
+    
+            .card-titles {
+                font-size: 11px;
+                line-height: 1.2;
+                overflow: hidden;
+                color: #18181dcb;
+                font-weight: 500;
+            }
+        }
+}
 }
