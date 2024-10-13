@@ -1,4 +1,4 @@
-import CartShopping from './Components/cart/Cart';
+import Cart from './Components/cart/Cart';
 import Provider from './Components/context/provider';
 import Footer from './Components/Footer/footer';
 import Header from './Components/Header/Header';
@@ -13,7 +13,7 @@ export default function App() {
     <Subtitle />
     <Iphones />
     <Footer />
-    <CartShopping />
+    <Cart />
     </Provider>
   )
 }
