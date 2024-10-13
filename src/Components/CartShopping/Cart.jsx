@@ -4,10 +4,10 @@ import AppContext from '../context/AppContext';
 import CartItem from '../cart-item/cart';
 import formatCurrency from '../../utili/formatCurrency';
 
-export default function Cart() {
+export default function CartShopping() {
 
     const { cartItens, isCartVisible } = useContext(AppContext);
-    
+
     const totalPrice = cartItens.reduce((acumulator, item) => item.price + acumulator, 0);
 
     return (
