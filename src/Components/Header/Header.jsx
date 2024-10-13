@@ -1,9 +1,9 @@
 
-import Cart from '../cart/Cart'
 import Search from '../search/search'
 import './Header.scss';
 import { CiShoppingTag } from "react-icons/ci";
 import Navbar from './navbar/navbar';
+import CartIcon from '../Cart-btn/Cart';
 
 
 export default function Header() {
@@ -14,8 +14,8 @@ export default function Header() {
                 <Navbar />
                 <h1><a href="#">ShopBuy <CiShoppingTag /></a></h1>
                 <Search />
-                <div className="cart">
-                    <Cart />
+                <div className="cart-icon">
+                    <CartIcon />
                 </div>
             </div>
         </div>

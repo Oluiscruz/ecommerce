@@ -4,16 +4,23 @@ import { useState } from "react";
 
 function Provider({children}) {
 
+    const [cartItens, setCartItens] = useState([]);
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [isCartVisible, setCartVisible] = useState(true);
 
 
     const value = {
         products,
         setProducts,
         loading,
-        setLoading
-    }
+        setLoading,
+        cartItens,
+        setCartItens,
+        isCartVisible, 
+        setCartVisible,
+    };
+
     return (
         <AppContext.Provider value={value}>
             {children}
